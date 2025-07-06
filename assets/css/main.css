@@ -1,10 +1,10 @@
-/* Variables de color y tipografía - FUCHSIA & WHITE PALETTE */
+/* Variables de color y tipografía - GREY BLUE WHITE SCALE PALETTE */
 :root {
-  --primary-color: #d900a6;        /* Fuchsia */
-  --secondary-color: #ffffff;      /* White */
-  --text-color: #d900a6;
-  --light-gray: #f5e6f7;
-  --dark-gray: #8d057b;
+  --primary-color: #375a7f;        /* Blue-grey (main accent) */
+  --secondary-color: #f8f9fa;      /* Almost white */
+  --text-color: #2d3e50;           /* Dark blue-grey (for text) */
+  --light-gray: #e9ecef;           /* Very light grey */
+  --dark-gray: #495057;            /* Darker grey */
   --font-main: 'Segoe UI', Arial, sans-serif;
   --font-headings: 'Palatino Linotype', serif;
 }
@@ -17,7 +17,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 7px rgba(217,0,166,0.10);
+  box-shadow: 0 2px 7px rgba(55,90,127,0.10);
 }
 
 .nav-container {
@@ -84,7 +84,7 @@ body {
 
   /* Fixed, dimmed background image */
   background-image:
-    linear-gradient(rgba(217, 0, 166, 0.50), rgba(217, 0, 166, 0.15)),
+    linear-gradient(rgba(55, 90, 127, 0.50), rgba(55, 90, 127, 0.15)),
     url('../images/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -149,9 +149,9 @@ section {
   padding: 3rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  background: rgba(255,255,255,0.95);
+  background: rgba(248,249,250,0.95);
   border-radius: 20px;
-  box-shadow: 0 4px 18px rgba(217,0,166,0.07);
+  box-shadow: 0 4px 18px rgba(55,90,127,0.07);
 }
 
 .section-title {
@@ -171,13 +171,13 @@ section {
 
 /* CV Section */
 .cv-section {
-  background: var(--light-gray, #f5e6f7);
+  background: var(--light-gray, #e9ecef);
   text-align: center;
   padding: 2.5rem 1rem;
   border-radius: 20px;
   margin: 2rem auto;
   max-width: 700px;
-  box-shadow: 0 4px 18px rgba(217,0,166,0.08);
+  box-shadow: 0 4px 18px rgba(55,90,127,0.08);
 }
 
 .cv-download {
@@ -214,7 +214,7 @@ section {
   background: var(--secondary-color);
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(217,0,166,0.10);
+  box-shadow: 0 5px 15px rgba(55,90,127,0.10);
   transition: transform 0.3s;
 }
 
@@ -236,9 +236,9 @@ section {
 .single-project-section {
   max-width: 900px;
   margin: 3rem auto 0 auto;
-  background: rgba(255,255,255,0.97);
+  background: rgba(248,249,250,0.97);
   border-radius: 20px;
-  box-shadow: 0 4px 18px rgba(217,0,166,0.10);
+  box-shadow: 0 4px 18px rgba(55,90,127,0.10);
   padding: 3rem 2rem;
 }
 
@@ -251,7 +251,7 @@ section {
   border-radius: 12px;
   margin: 0 auto;
   max-width: 700px;
-  box-shadow: 0 5px 15px rgba(217,0,166,0.10);
+  box-shadow: 0 5px 15px rgba(55,90,127,0.10);
 }
 
 .project-card-single img {
