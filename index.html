@@ -3,52 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>William Eduardo Clavijo Bohórquez | Physicist </title>
+  <title>William Eduardo Clavijo Bohórquez | Physicist</title>
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <!-- Navigation Bar -->
+  <nav class="main-nav">
+    <div class="nav-container">
+      <a href="#header" class="nav-logo">W.E.C.B.</a>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <!-- Header -->
-  <header>
-    <img src="assets/images/cosmic_rays_shower.jpeg" alt="Mi foto" class="avatar">
+  <header id="header">
+    <img src="assets/images/avatar.jpg" alt="Mi foto" class="avatar">
     <h1>William Eduardo Clavijo Bohórquez</h1>
-    <p>Physicist </p>
+    <p>Physicist</p>
   </header>
 
   <!-- Two-column layout starts here -->
   <div class="two-columns">
     <!-- Left column: Sobre mí -->
     <div class="left-column">
-      <section>
+      <section id="about">
         <h2 class="section-title">Sobre mí</h2>
-        <p> I have extensive expertise in numerical simulations of astrophysical systems, utilizing large datasets and high-performance computational (HPC) resources. My research focused on the dynamics of fluids in physical and astrophysical environments.
-
-        During my undergraduate studies at the National University of Colombia, I worked at the National Astronomical Observatory of the National University of Colombia on a cosmology project investigating computationally modified gravity theories (f(R)) using fluid dynamics. Later, during my master’s and doctoral studies at the University of São Paulo (Brazil), I developed and optimized numerical simulations using FORTRAN for MPI-parallelized computations, as well as Python and C++ for algorithm development and data analysis of magneto-hydrodynamic fluid (MHD fluids). Specifically, I implemented grid-based HPC methods to solve the Navier-Stokes equations for astrophysical environments, leveraging the computing cluster of the Astronomy Institute at the University of São Paulo. This work led to a published paper in the Monthly Notices of the Royal Astronomical Society (MNRAS) titled Role of AGN and Star Formation Feedback in the Evolution of Galaxy Outflows.
-
-        Looking ahead, I am deeply passionate about advancing my expertise in computational astrophysics and fluid dynamics. I thrive on the challenge of merging high-performance computing with fundamental physics optimizing simulation codes, refining grade-based models, or applying state-of-the-art techniques to enhance computation in mesh-based codes. I’m eager to contribute to projects that push the boundaries of numerical fluid dynamics while expanding my skills in large-scale simulations and data-driven modeling. The intersection of code development, physics, and HPC is where I see myself growing as a researcher—and where I can make the most impactful contributions. </p>
+        <p>
+          I have extensive expertise in numerical simulations of astrophysical systems, utilizing large datasets and high-performance computational (HPC) resources. My research focused on the dynamics of fluids in physical and astrophysical environments.
+          <br><br>
+          During my undergraduate studies at the National University of Colombia, I worked at the National Astronomical Observatory of the National University of Colombia on a cosmology project investigating computationally modified gravity theories (f(R)) using fluid dynamics. Later, during my master’s and doctoral studies at the University of São Paulo (Brazil), I developed and optimized numerical simulations using FORTRAN for MPI-parallelized computations, as well as Python and C++ for algorithm development and data analysis of magneto-hydrodynamic fluid (MHD fluids). Specifically, I implemented grid-based HPC methods to solve the Navier-Stokes equations for astrophysical environments, leveraging the computing cluster of the Astronomy Institute at the University of São Paulo. This work led to a published paper in the Monthly Notices of the Royal Astronomical Society (MNRAS) titled Role of AGN and Star Formation Feedback in the Evolution of Galaxy Outflows.
+          <br><br>
+          Looking ahead, I am deeply passionate about advancing my expertise in computational astrophysics and fluid dynamics. I thrive on the challenge of merging high-performance computing with fundamental physics, optimizing simulation codes, refining grid-based models, or applying state-of-the-art techniques to enhance computation in mesh-based codes. I’m eager to contribute to projects that push the boundaries of numerical fluid dynamics while expanding my skills in large-scale simulations and data-driven modeling. The intersection of code development, physics, and HPC is where I see myself growing as a researcher—and where I can make the most impactful contributions.
+        </p>
       </section>
     </div>
     <!-- Right column: Proyectos -->
     <div class="right-column">
-      <section>
-        <h2 class="section-title">Mis intereses</h2>
+      <section id="projects">
+        <h2 class="section-title">Proyectos</h2>
         <div class="project-grid">
-          
           <!-- Proyecto 1 -->
           <div class="project-card">
-            <img src="assets/images/Hanoi.png" alt="Proyecto 1">
+            <img src="assets/images/project1.jpg" alt="Proyecto 1">
             <div class="project-info">
-              <h3>Educacion</h3>
+              <h3>Nombre del Proyecto</h3>
               <p>Descripción breve del proyecto. Lorem ipsum dolor sit amet.</p>
               <a href="#">Ver más →</a>
             </div>
           </div>
-
           <!-- Proyecto 2 -->
           <div class="project-card">
-            <img src="assets/images/cosmic_rays_shower.jpeg" alt="Proyecto 2">
+            <img src="assets/images/project2.jpg" alt="Proyecto 2">
             <div class="project-info">
-              <h3>Astrophysics</h3>
+              <h3>Nombre del Proyecto</h3>
               <p>Descripción breve del proyecto. Lorem ipsum dolor sit amet.</p>
               <a href="#">Ver más →</a>
             </div>
@@ -59,8 +72,21 @@
   </div>
   <!-- Two-column layout ends here -->
 
+  <!-- CV Section -->
+  <section id="cv" class="cv-section">
+    <h2 class="section-title">Currículum Vitae</h2>
+    <p>Puedes descargar mi CV en PDF aquí:</p>
+    <a class="cv-download" href="assets/docs/cv.pdf" target="_blank" rel="noopener">
+      <i class="fa fa-file-pdf"></i> Descargar CV (PDF)
+    </a>
+    <!-- Optionally, to embed the PDF directly: -->
+    <!--
+    <embed src="assets/docs/cv.pdf" type="application/pdf" width="100%" height="600px" />
+    -->
+  </section>
+
   <!-- Contacto -->
-  <footer>
+  <footer id="contact">
     <h2>Contacto</h2>
     <p>Email: <a href="mailto:weclavijob@alumni.usp.br">weclavijob@alumni.usp.br</a></p>
     <div class="social-links">
