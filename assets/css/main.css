@@ -5,8 +5,8 @@
   --text-color: #2d3e50;           /* Dark blue-grey (for text) */
   --light-gray: #e9ecef;           /* Very light grey */
   --dark-gray: #495057;            /* Darker grey */
-  --font-main: 'Segoe UI', Arial, sans-serif;
-  --font-headings: 'Palatino Linotype', serif;
+  --font-main: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  --font-headings: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* Navigation bar */
