@@ -1,12 +1,12 @@
-/* Variables de color y tipografía */
+/* Variables de color y tipografía - NEW COLORS */
 :root {
-  --primary-color: #2c3e50;       /* Azul oscuro */
-  --secondary-color: #3498db;     /* Azul claro */
-  --text-color: #333;
-  --light-gray: #ecf0f1;
-  --dark-gray: #7f8c8d;
-  --font-main: 'Helvetica Neue', Arial, sans-serif;
-  --font-headings: 'Georgia', serif;
+  --primary-color: #25603b;        /* Verde oscuro */
+  --secondary-color: #f8c146;      /* Amarillo dorado */
+  --text-color: #232323;
+  --light-gray: #f4f6f2;
+  --dark-gray: #5d5d5d;
+  --font-main: 'Segoe UI', Arial, sans-serif;
+  --font-headings: 'Palatino Linotype', serif;
 }
 
 /* Reset y estilos base */
@@ -17,6 +17,15 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fff;
+
+  /* Fixed, dimmed background image */
+  background-image:
+    linear-gradient(rgba(36, 43, 51, 0.64), rgba(36, 43, 51, 0.64)), /* dark semi-transparent overlay */
+    url('../images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 h1, h2, h3, h4 {
@@ -65,7 +74,6 @@ header img.avatar {
   min-width: 0;
 }
 
-/* Remove default padding from sections inside the two columns */
 .left-column section,
 .right-column section {
   padding: 0;
