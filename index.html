@@ -1,189 +1,77 @@
-/* Variables de color y tipografía */
-:root {
-  --primary-color: #2c3e50;       /* Azul oscuro */
-  --secondary-color: #3498db;     /* Azul claro */
-  --text-color: #333;
-  --light-gray: #ecf0f1;
-  --dark-gray: #7f8c8d;
-  --font-main: 'Helvetica Neue', Arial, sans-serif;
-  --font-headings: 'Georgia', serif;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>William Eduardo Clavijo Bohórquez | Physicist</title>
+  <meta name="description" content="William Eduardo Clavijo Bohórquez – Físico, investigador y científico de datos. Portafolio, proyectos académicos y contacto.">
+  <meta name="keywords" content="física, astrofísica, ciencia de datos, investigación, portafolio, William Clavijo">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Top Navigation -->
+  <nav>
+    <a href="#about">Sobre mí</a>
+    <a href="#projects">Proyectos</a>
+    <a href="#contact">Contacto</a>
+  </nav>
 
-/* Reset y estilos base */
-body {
-  font-family: var(--font-main);
-  line-height: 1.6;
-  color: var(--text-color);
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-}
+  <!-- Header -->
+  <header>
+    <img src="assets/images/avatar.jpg" alt="Foto de William Eduardo Clavijo Bohórquez" class="avatar">
+    <h1>William Eduardo Clavijo Bohórquez</h1>
+    <p>Physicist</p>
+  </header>
 
-h1, h2, h3, h4 {
-  font-family: var(--font-headings);
-  font-weight: 700;
-  color: var(--primary-color);
-}
+  <!-- Sobre mí -->
+  <section id="about">
+    <h2 class="section-title">Sobre mí</h2>
+    <p>
+      I have extensive expertise in numerical simulations of astrophysical systems, utilizing large datasets and high-performance computational (HPC) resources. My research focused on the dynamics of fluids in physical and astrophysical environments.
+      <br><br>
+      During my undergraduate studies at the National University of Colombia, I worked at the National Astronomical Observatory of the National University of Colombia on a cosmology project investigating computationally modified gravity theories (f(R)) using fluid dynamics. Later, during my master’s and doctoral studies at the University of São Paulo (Brazil), I developed and optimized numerical simulations using FORTRAN for MPI-parallelized computations, as well as Python and C++ for algorithm development and data analysis of magneto-hydrodynamic fluid (MHD fluids). Specifically, I implemented grid-based HPC methods to solve the Navier-Stokes equations for astrophysical environments, leveraging the computing cluster of the Astronomy Institute at the University of São Paulo. This work led to a published paper in the Monthly Notices of the Royal Astronomical Society (MNRAS) titled Role of AGN and Star Formation Feedback in the Evolution of Galaxy Outflows.
+      <br><br>
+      Looking ahead, I am deeply passionate about advancing my expertise in computational astrophysics and fluid dynamics. I thrive on the challenge of merging high-performance computing with fundamental physics, optimizing simulation codes, refining grid-based models, or applying state-of-the-art techniques to enhance computation in mesh-based codes. I’m eager to contribute to projects that push the boundaries of numerical fluid dynamics while expanding my skills in large-scale simulations and data-driven modeling. The intersection of code development, physics, and HPC is where I see myself growing as a researcher—and where I can make the most impactful contributions.
+    </p>
+  </section>
 
-a {
-  color: var(--secondary-color);
-  text-decoration: none;
-  transition: color 0.3s;
-}
+  <!-- Proyectos -->
+  <section id="projects">
+    <h2 class="section-title">Proyectos</h2>
+    <div class="project-grid">
+      <!-- Proyecto 1 -->
+      <div class="project-card">
+        <img src="assets/images/project1.jpg" alt="Proyecto 1">
+        <div class="project-info">
+          <h3>Nombre del Proyecto</h3>
+          <p>Descripción breve del proyecto. Lorem ipsum dolor sit amet.</p>
+          <a href="#">Ver más →</a>
+        </div>
+      </div>
+      <!-- Proyecto 2 -->
+      <div class="project-card">
+        <img src="assets/images/project2.jpg" alt="Proyecto 2">
+        <div class="project-info">
+          <h3>Nombre del Proyecto</h3>
+          <p>Descripción breve del proyecto. Lorem ipsum dolor sit amet.</p>
+          <a href="#">Ver más →</a>
+        </div>
+      </div>
+      <!-- Agrega más proyectos aquí -->
+    </div>
+  </section>
 
-a:hover {
-  color: var(--primary-color);
-}
-
-/* Top Navigation */
-nav {
-  background: var(--primary-color);
-  text-align: center;
-  padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-nav a {
-  color: #fff;
-  margin: 0 1.5rem;
-  font-weight: bold;
-  font-size: 1.1rem;
-  letter-spacing: 0.5px;
-  transition: color 0.2s;
-}
-
-nav a:hover,
-nav a:focus {
-  color: var(--secondary-color);
-  outline: none;
-}
-
-/* Header */
-header {
-  text-align: center;
-  padding: 4rem 2rem;
-  background-color: var(--light-gray);
-}
-
-header img.avatar {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 4px solid var(--primary-color);
-  margin-bottom: 1.5rem;
-  object-fit: cover;
-}
-
-/* Secciones */
-section {
-  padding: 3rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.section-title {
-  text-align: center;
-  margin-bottom: 3rem;
-  position: relative;
-}
-
-.section-title:after {
-  content: "";
-  display: block;
-  width: 100px;
-  height: 3px;
-  background: var(--secondary-color);
-  margin: 1rem auto;
-}
-
-/* Grid de proyectos */
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.project-card {
-  background: white;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-}
-
-.project-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.project-info {
-  padding: 1.5rem;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.project-info a {
-  margin-top: 1rem;
-  font-weight: bold;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 2rem;
-  background-color: var(--primary-color);
-  color: white;
-}
-
-.social-links {
-  margin-top: 1rem;
-}
-
-.social-links a {
-  color: white;
-  margin: 0 10px;
-  font-size: 1.5rem;
-  transition: color 0.2s;
-}
-
-.social-links a:hover,
-.social-links a:focus {
-  color: var(--secondary-color);
-  outline: none;
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  section {
-    padding: 2rem 1rem;
-  }
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 600px) {
-  header {
-    padding: 2rem 1rem;
-  }
-  section {
-    padding: 1.5rem 0.5rem;
-  }
-  nav a {
-    margin: 0 0.7rem;
-    font-size: 1rem;
-  }
-}
+  <!-- Contacto -->
+  <footer id="contact">
+    <h2>Contacto</h2>
+    <p>Email: <a href="mailto:weclavijob@alumni.usp.br">weclavijob@alumni.usp.br</a></p>
+    <div class="social-links" aria-label="Redes sociales">
+      <a href="https://github.com/your-github" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/your-linkedin" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/your-twitter" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>&copy; 2025 William E. Clavijo B</p>
+  </footer>
+</body>
+</html>
